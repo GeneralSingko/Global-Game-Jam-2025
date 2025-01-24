@@ -133,9 +133,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 469374922}
+  - component: {fileID: 469374923}
   m_Layer: 0
   m_Name: RoomTemplate
-  m_TagString: Untagged
+  m_TagString: Rooms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +156,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &469374923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469374921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9176d03de3341564bb0d8f0132c9ae3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomRooms:
+  - {fileID: 3744077842779813112, guid: 81708cb35c56d2f46b9be69a9eb3f25b, type: 3}
+  - {fileID: 4100555501281741589, guid: 4736ca166be8795408552ef5e2e04685, type: 3}
+  - {fileID: 4548867209231361682, guid: ff5515263b08a1e489d026427fe3683d, type: 3}
+  topRooms:
+  - {fileID: 8980852606118665943, guid: 0bfea5938ebdd2e4c8effb8942f4f80e, type: 3}
+  - {fileID: 4548867209231361682, guid: ff5515263b08a1e489d026427fe3683d, type: 3}
+  - {fileID: 4729438698264342353, guid: d5996cb04721e7e4ab1f5e15918aa4cf, type: 3}
+  - {fileID: 6711783126388711304, guid: feb72df4716d2e0498d672aabb5dff77, type: 3}
+  leftRooms:
+  - {fileID: 3707597967508367131, guid: 2fc5bca3c0d86cc43a12278d40c15bfa, type: 3}
+  - {fileID: 6694922134256219766, guid: 603227a70df8168438456fc898158f32, type: 3}
+  - {fileID: 4729438698264342353, guid: d5996cb04721e7e4ab1f5e15918aa4cf, type: 3}
+  rightRooms:
+  - {fileID: 6164728353122501548, guid: 2f91d40991d754c4296785edcf97ac9d, type: 3}
+  - {fileID: 6694922134256219766, guid: 603227a70df8168438456fc898158f32, type: 3}
+  - {fileID: 4100555501281741589, guid: 4736ca166be8795408552ef5e2e04685, type: 3}
+  - {fileID: 6711783126388711304, guid: feb72df4716d2e0498d672aabb5dff77, type: 3}
 --- !u!1 &1856299022
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,9 +363,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058884338}
     m_Modifications:
+    - target: {fileID: 1527877443008916485, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
+      propertyPath: openingDirection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732201336626301698, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
+      propertyPath: openingDirection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410380934392144622, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
+      propertyPath: openingDirection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3713063701240789602, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
       propertyPath: m_Name
       value: EntryRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071021247047611630, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
+      propertyPath: openingDirection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8200349203893046243, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
       propertyPath: m_LocalPosition.x
@@ -342,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8200349203893046243, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8200349203893046243, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
       propertyPath: m_LocalPosition.z

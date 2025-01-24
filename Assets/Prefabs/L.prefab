@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 7329718631995771329}
   m_Layer: 0
   m_Name: Spawnpoint (2)
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -603,6 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba4b48c9f6a4bd4ab75506880000a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDirection: 1
 --- !u!61 &1434993325470083947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -951,7 +952,7 @@ GameObject:
   - component: {fileID: 2328494072658463218}
   m_Layer: 0
   m_Name: Spawnpoint (3)
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -983,6 +984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba4b48c9f6a4bd4ab75506880000a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDirection: 1
 --- !u!61 &8709243576157735168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1516,7 +1518,7 @@ Transform:
   m_GameObject: {fileID: 3707597967508367131}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 105, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2060,7 +2062,7 @@ GameObject:
   - component: {fileID: 8869251547699322707}
   m_Layer: 0
   m_Name: Spawnpoint (1)
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2092,6 +2094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba4b48c9f6a4bd4ab75506880000a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDirection: 1
 --- !u!61 &5028453412160640541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2353,7 +2356,7 @@ GameObject:
   - component: {fileID: 6734240181909902884}
   m_Layer: 0
   m_Name: Spawnpoint
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2385,6 +2388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba4b48c9f6a4bd4ab75506880000a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDirection: 1
 --- !u!61 &7991571556964632140
 BoxCollider2D:
   m_ObjectHideFlags: 0
