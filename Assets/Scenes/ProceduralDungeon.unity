@@ -379,6 +379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EntryRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 8008666021722508676, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8071021247047611630, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
       propertyPath: openingDirection
       value: 0
@@ -389,7 +393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8200349203893046243, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8200349203893046243, guid: b713c7b3bc3de2349871bf979cd38370, type: 3}
       propertyPath: m_LocalPosition.z
