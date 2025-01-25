@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private KeyCode primaryFire = KeyCode.Mouse0;
     [SerializeField] private KeyCode fireMode1 = KeyCode.Alpha1;
     [SerializeField] private KeyCode fireMode2 = KeyCode.Alpha2;
+    [SerializeField] private KeyCode reload = KeyCode.R;
 
     //Shooting Variables 
     [Header("Shooting")]
@@ -40,6 +41,12 @@ public class PlayerMovement : MonoBehaviour
     //Turning Variables
     Vector2 mousePos;
 
+    [Header("Ammo System")]
+    [SerializeField] private int magazineSize = 10;  // Total bullets in one magazine
+    [SerializeField] private float reloadTime = 2f;  // Time to reload
+    private int currentAmmo;                        // Bullets left in the magazine
+    private bool isReloading = false;               // Check if the player is reloading
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -49,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
         //sets up variables
         fireState = 1; //sets fire state to single fire
         canShoot = true;
+        currentAmmo = magazineSize; // Full magazine
     }
 
     // Update is called once per frame
@@ -68,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
         //{
         //    Debug.Log("Pressed");
         //}
+
+        ReloadBullets();
     }
 
     //gets player input
@@ -106,6 +116,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void ReloadBullets()
+    {
+        if (Input.GetKeyDown(reload) && !isReloading && currentAmmo < magazineSize)
+        {
+            StartCoroutine(Reload());
+        }
+    }
+
     //Moves the player around
     private void Move(Vector3 inputVector)
     {
@@ -138,31 +156,66 @@ public class PlayerMovement : MonoBehaviour
     //Shoots projectiles based on fire state
     void Shoot()
     {
-        //Instantiate(bulletPrefab, bulletSpawnPos.position, bulletSpawnPos.rotation);
-        switch (fireState)
+        // Prevent shooting while reloading
+        if (isReloading) return;
+
+        if (currentAmmo > 0)
         {
-            case 1:
-                if(Input.GetKeyDown(primaryFire) && canShoot)
-                {
-                    StartCoroutine(FireStateOne());
-                }
-                return;
-            case 2:
-                if (Input.GetKey(primaryFire) && canShoot)
-                {
-                    StartCoroutine(FireStateTwo());
-                }
-                return;
-            default:
-                Debug.Log("how you done do that?");
-                return;
+            //Instantiate(bulletPrefab, bulletSpawnPos.position, bulletSpawnPos.rotation);
+            switch (fireState)
+            {
+                case 1: //SingleFire
+                    if (Input.GetKeyDown(primaryFire) && canShoot)
+                    {
+                        StartCoroutine(FireStateOne());
+                    }
+                    return;
+                case 2: //RapidFire
+                    if (Input.GetKey(primaryFire) && canShoot)
+                    {
+                        StartCoroutine(FireStateTwo());
+                    }
+                    return;
+                default:
+                    Debug.Log("how you done do that?");
+                    return;
+            }
         }
+        else
+        {
+            Debug.Log("Out of ammo! Reloading...");
+            StartCoroutine(Reload());
+        }
+
+
+    }
+
+    IEnumerator Reload()
+    {
+        isReloading = true;
+        Debug.Log("Reloading...");
+
+        yield return new WaitForSeconds(reloadTime);
+
+        currentAmmo = magazineSize; // Refill magazine
+        isReloading = false;
+
+        Debug.Log("Reload complete!");
     }
 
     //Spawns bullets in designated bullet spawn point
     void SpawnBullet()
     {
-        Instantiate(bulletPrefab, bulletSpawnPos.position, bulletSpawnPos.rotation);
+        /*Instantiate(bulletPrefab, bulletSpawnPos.position, bulletSpawnPos.rotation);
+        GameObject bullet = BulletPoolManager.Instance.GetBullet();
+        bullet.transform.position = bulletSpawnPos.position;
+        bullet.transform.rotation = bulletSpawnPos.rotation;*/
+        GameObject bullet = BulletPoolManager.Instance.GetBullet();
+        bullet.transform.position = bulletSpawnPos.position;
+        bullet.transform.rotation = bulletSpawnPos.rotation;
+
+        currentAmmo--; // Reduce ammo count
+        Debug.Log("Ammo left: " + currentAmmo);
     }
 
     //single fire
