@@ -5,6 +5,9 @@ public class SampleEnemy : MonoBehaviour
     [Header("Scriptable Object")]
     [SerializeField] EnemyStats enemyStatValues;
 
+    [Header("VFX Settings")]
+    [SerializeField] ParticleSystem hitEffect; // Reference to the VFX prefab.
+
     int currentHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,8 +39,25 @@ public class SampleEnemy : MonoBehaviour
         {
             bulletScript = collision.gameObject.GetComponent<Bullet>();
             TakeDamage(5);
+
+            // Play the hit effect.
+            PlayHitEffect(collision.GetContact(0).point);
+
             bulletScript.ReturnToPool();
         }
 
+    }
+
+    private void PlayHitEffect(Vector2 hitPosition)
+    {
+        if (hitEffect != null)
+        {
+            // Instantiate the particle system at the hit position.
+            ParticleSystem effect = Instantiate(hitEffect, hitPosition, Quaternion.identity);
+            effect.Play();
+
+            // Destroy the particle system after its duration.
+            Destroy(effect.gameObject, effect.main.duration);
+        }
     }
 }

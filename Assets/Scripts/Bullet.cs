@@ -46,15 +46,6 @@ public class Bullet : MonoBehaviour
         transform.Translate(Vector3.up * bulletSpeed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other) // Use OnTriggerEnter2D for 2D
-    {
-        // Check for collision and return to pool
-        if (other.CompareTag("EraseBullets"))
-        {
-            ReturnToPool();
-        }
-    }
-
     public void ReturnToPool()
     {
         CancelInvoke(); // Stop any pending ReturnToPool calls
