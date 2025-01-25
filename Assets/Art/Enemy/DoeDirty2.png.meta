@@ -1,0 +1,843 @@
+fileFormatVersion: 2
+guid: 97af120dcc4cfb0448e9b9c877da5568
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8611204428725717641
+    second: DoeDirty2_0
+  - first:
+      213: 8751674271989876914
+    second: DoeDirty2_1
+  - first:
+      213: -4228808235010512885
+    second: DoeDirty2_2
+  - first:
+      213: -3481804791227476812
+    second: DoeDirty2_3
+  - first:
+      213: -57254187712133071
+    second: DoeDirty2_4
+  - first:
+      213: 405781725570525172
+    second: DoeDirty2_5
+  - first:
+      213: -4826335087115454290
+    second: DoeDirty2_6
+  - first:
+      213: 4542804000995031511
+    second: DoeDirty2_7
+  - first:
+      213: 2496660887353088509
+    second: DoeDirty2_8
+  - first:
+      213: -237566982026084114
+    second: DoeDirty2_9
+  - first:
+      213: 8754754316449398285
+    second: DoeDirty2_10
+  - first:
+      213: -910238466684225079
+    second: DoeDirty2_11
+  - first:
+      213: -522121675292998308
+    second: DoeDirty2_12
+  - first:
+      213: 4626250076261170583
+    second: DoeDirty2_13
+  - first:
+      213: -6755645050804473077
+    second: DoeDirty2_14
+  - first:
+      213: -4209505222034755636
+    second: DoeDirty2_15
+  - first:
+      213: -5260034189995809515
+    second: DoeDirty2_16
+  - first:
+      213: -3610670559187579261
+    second: DoeDirty2_17
+  - first:
+      213: -1592092851864287213
+    second: DoeDirty2_18
+  - first:
+      213: 8419897920225928769
+    second: DoeDirty2_19
+  - first:
+      213: -1960615732790097744
+    second: DoeDirty2_20
+  - first:
+      213: -9199224586097609026
+    second: DoeDirty2_21
+  - first:
+      213: -4632619277179180822
+    second: DoeDirty2_22
+  - first:
+      213: 6866032576628845369
+    second: DoeDirty2_23
+  - first:
+      213: 3798129874297088049
+    second: DoeDirty2_24
+  - first:
+      213: 6643803694543392061
+    second: DoeDirty2_25
+  - first:
+      213: 9117419628332807498
+    second: DoeDirty2_26
+  - first:
+      213: -4320855812416589950
+    second: DoeDirty2_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoeDirty2_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2150
+        width: 1034
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7757889323bde7880800000000000000
+      internalID: -8611204428725717641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 2930
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8c1ebc161347970800000000000000
+      internalID: 8751674271989876914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 2933
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08a3f0c0514055c0800000000000000
+      internalID: -4228808235010512885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_3
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 2927
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b412a16df42eafc0800000000000000
+      internalID: -3481804791227476812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_4
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 2933
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138c38f9e97943ff0800000000000000
+      internalID: -57254187712133071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_5
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 2928
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7e9f85450a1a500800000000000000
+      internalID: 405781725570525172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_6
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 2141
+        width: 1105
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8ba7d2fc9650db0800000000000000
+      internalID: -4826335087115454290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_7
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 2925
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9388b8b284b0f30800000000000000
+      internalID: 4542804000995031511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_8
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 2920
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9da4369dbe5a220800000000000000
+      internalID: 2496660887353088509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_9
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 2923
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee049f9a61ef3bcf0800000000000000
+      internalID: -237566982026084114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_10
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 2156
+        width: 1048
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0eb8c78aa22f7970800000000000000
+      internalID: 8754754316449398285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_11
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 1141
+        width: 1040
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9f36cefee2e53f0800000000000000
+      internalID: -910238466684225079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_12
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 1923
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5501a64a1d01c8f0800000000000000
+      internalID: -522121675292998308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_13
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1926
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79dbba5feedb33040800000000000000
+      internalID: 4626250076261170583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1145
+        width: 1052
+        height: 772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b037c268e902f32a0800000000000000
+      internalID: -6755645050804473077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_15
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1915
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf6770bd45d495c0800000000000000
+      internalID: -4209505222034755636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_16
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1146
+        width: 1065
+        height: 760
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515e3e6e5ca9007b0800000000000000
+      internalID: -5260034189995809515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_17
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1901
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ec9aea14254edc0800000000000000
+      internalID: -3610670559187579261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_18
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1904
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318c03b8cffb7e9e0800000000000000
+      internalID: -1592092851864287213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_19
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1695
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146ed144c8c79d470800000000000000
+      internalID: 8419897920225928769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_20
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 1688
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8010af06e7ac4e0800000000000000
+      internalID: -1960615732790097744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_21
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 1626
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6bc908af9c55080800000000000000
+      internalID: -9199224586097609026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_22
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 907
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8ab14ef41a5bfb0800000000000000
+      internalID: -4632619277179180822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_23
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 152
+        width: 1060
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93be83a204c094f50800000000000000
+      internalID: 6866032576628845369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_24
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 913
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138e6405ffaa5b430800000000000000
+      internalID: 3798129874297088049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_25
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 148
+        width: 1064
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3dcfa28248833c50800000000000000
+      internalID: 6643803694543392061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_26
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 904
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4573f688d4978e70800000000000000
+      internalID: 9117419628332807498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoeDirty2_27
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 678
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f2a3f088c3904c0800000000000000
+      internalID: -4320855812416589950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
