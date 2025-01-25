@@ -335,7 +335,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerCurrentHP > 0)
         {
             // Trigger the Hurt animation
-            animator.SetTrigger("Hurt");
+            animator.SetTrigger("IsHurt");
         }
         else
         {
