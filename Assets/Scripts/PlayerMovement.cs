@@ -3,6 +3,7 @@ using System.Collections;
 using System.Transactions;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -81,29 +82,30 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Movement Functions
-        HandleInput();
-        if(!isDashing)
+        if (!InGameSceneManager.Instance.gameIsPaused)
         {
-            Move();
+            //Movement Functions
+            HandleInput();
+            if (!isDashing)
+            {
+                Move();
+            }
+
+            HandleMovementParticles();
+
+            //Shooting Functions
+            Shoot();
+
+            //Mouse Direction rotation
+            LookAtMouse();
+
+            ReloadBullets();
+            if (isDashing)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, lastMousePos, dashDistance * Time.deltaTime);
+            }
+            Debug.Log("Player Current HP: " + playerCurrentHP);
         }
-
-        HandleMovementParticles();
-
-        //Shooting Functions
-        Shoot();
-
-        //Mouse Direction rotation
-        LookAtMouse();
-
-        ReloadBullets();
-        if (isDashing)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, lastMousePos, dashDistance * Time.deltaTime);
-        }
-        Debug.Log("Player Current HP: " + playerCurrentHP);
-
-        UpdateAnimations();
     }
 
     private void UpdateAnimations()
@@ -270,6 +272,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetTrigger("Hurt");
         if (playerCurrentHP <= 0)
         {
+            InGameSceneManager.Instance.GameOverScreen();
             Destroy(gameObject);
         }
     }*/
