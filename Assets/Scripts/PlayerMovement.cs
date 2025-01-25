@@ -83,6 +83,8 @@ public class PlayerMovement : MonoBehaviour
             Move();
         }
 
+        HandleMovementParticles();
+
         //Shooting Functions
         Shoot();
 
