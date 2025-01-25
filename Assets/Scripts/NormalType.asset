@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccc0ea5008e195a46a94bf91d5542dac, type: 3}
-  m_Name: type1
+  m_Name: NormalType
   m_EditorClassIdentifier: 
   maximumHealth: 10
   attackDamage: 5
