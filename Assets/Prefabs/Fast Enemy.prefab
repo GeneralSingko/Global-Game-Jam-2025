@@ -108,7 +108,7 @@ MonoBehaviour:
   currentHealth: 0
   stopDistance: 10
   isHitting: 0
-  hitEffect: {fileID: 0}
+  hitEffect: {fileID: 7134288345005714223, guid: fb24a3e0f56b6f6428d50821a414318f, type: 3}
   animator: {fileID: 0}
   animStates:
   - {fileID: 9100000, guid: b611ac3edc1acb749925ee913329b9e3, type: 2}
