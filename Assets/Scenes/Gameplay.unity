@@ -222,7 +222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &33591973
 Transform:
   m_ObjectHideFlags: 0
@@ -271,8 +271,16 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
       propertyPath: useUnscaledTime
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
+      propertyPath: ShapeModule.type
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
       propertyPath: startDelay.scalar
@@ -280,19 +288,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 20.8
+      value: 22.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
+      propertyPath: ShapeModule.alignToDirection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 26
+      value: 26.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 14.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 32743380021223549, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
+      propertyPath: InitialModule.randomizeRotationDirection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4538634474284366579, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2
+      value: -3.13
       objectReference: {fileID: 0}
     - target: {fileID: 4538634474284366579, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.8
+      value: -6.98
       objectReference: {fileID: 0}
     - target: {fileID: 4538634474284366579, guid: 14ad0250cb7a8894cada9dc1410342e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1209,7 +1237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd28662cdfbdbda4bb0b28655a1c355c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 100
+  moveSpeed: 150
   dashDistance: 30
   dashDuration: 0.1
   dashCD: 0.5
