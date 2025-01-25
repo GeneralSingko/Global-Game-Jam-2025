@@ -1,43 +1,31 @@
 fileFormatVersion: 2
-guid: ae75055f0ce551b48b0037e45659349c
+guid: 098b7c02fa6638e4680042b002b58392
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6633215996313363717
-    second: Wubba Running SpriteSheet_0
+      213: 8468549982036119865
+    second: WubbaFullRun_0
   - first:
-      213: 6722571707778476458
-    second: Wubba Running SpriteSheet_1
+      213: 4217837885882983725
+    second: WubbaFullRun_1
   - first:
-      213: 8688216528270808080
-    second: Wubba Running SpriteSheet_2
+      213: -4107000966180609981
+    second: WubbaFullRun_2
   - first:
-      213: -3561793360788351674
-    second: Wubba Running SpriteSheet_3
+      213: -4579044006893735643
+    second: WubbaFullRun_3
   - first:
-      213: -532228338682401811
-    second: Wubba Running SpriteSheet_4
+      213: -8718471366998230056
+    second: WubbaFullRun_4
   - first:
-      213: 3105460708861197321
-    second: Wubba Running SpriteSheet_5
+      213: -126759594829021686
+    second: WubbaFullRun_5
   - first:
-      213: -2092750021217895894
-    second: Wubba Running SpriteSheet_6
+      213: 1288109959106104984
+    second: WubbaFullRun_6
   - first:
-      213: -2134013133694165793
-    second: Wubba Running SpriteSheet_7
-  - first:
-      213: 2202014411175936597
-    second: Wubba Running SpriteSheet_8
-  - first:
-      213: 383297222822277739
-    second: Wubba Running SpriteSheet_9
-  - first:
-      213: -3262996779767505281
-    second: Wubba Running SpriteSheet_10
-  - first:
-      213: -4257272343319122076
-    second: Wubba Running SpriteSheet_11
+      213: -3769449030342274665
+    second: WubbaFullRun_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -159,54 +147,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wubba Running SpriteSheet_4
+      name: WubbaFullRun_0
       rect:
         serializedVersion: 2
-        x: 617
-        y: 2357
-        width: 1073
-        height: 2178
+        x: 95
+        y: 2355
+        width: 1075
+        height: 2179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a7fd1d76677e60d4f9a9aacb3c77a1d6
-      internalID: -1964673620
+      spriteID: 93157e12755568570800000000000000
+      internalID: 8468549982036119865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubba Running SpriteSheet_5
+      name: WubbaFullRun_1
       rect:
         serializedVersion: 2
-        x: 1923
+        x: 1402
         y: 2351
-        width: 951
-        height: 2187
+        width: 952
+        height: 2186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 361c2b090e2bca344b0ddecc9b32afd3
-      internalID: -779416070
+      spriteID: d256d3cc535c88a30800000000000000
+      internalID: 4217837885882983725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubba Running SpriteSheet_6
+      name: WubbaFullRun_2
       rect:
         serializedVersion: 2
-        x: 3242
+        x: 2721
         y: 2345
         width: 879
         height: 2182
@@ -216,43 +204,43 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 495b650ab422f8e41bc4c3240cf077ec
-      internalID: 640394954
+      spriteID: 3406e9e81600107c0800000000000000
+      internalID: -4107000966180609981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubba Running SpriteSheet_7
+      name: WubbaFullRun_3
       rect:
         serializedVersion: 2
-        x: 4541
+        x: 4021
         y: 2365
-        width: 875
-        height: 2179
+        width: 874
+        height: 2178
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 54277d271ee1cf240b6a2770b9e18215
-      internalID: 2143412235
+      spriteID: 521b73e8cb7f370c0800000000000000
+      internalID: -4579044006893735643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubba Running SpriteSheet_8
+      name: WubbaFullRun_4
       rect:
         serializedVersion: 2
         x: 116
         y: 24
-        width: 875
+        width: 876
         height: 2193
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -260,76 +248,76 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fbedd66f1f7f5db468cc1c7a8c377f39
-      internalID: 2093667428
+      spriteID: 8dbf7a1fb74c10780800000000000000
+      internalID: -8718471366998230056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubba Running SpriteSheet_9
+      name: WubbaFullRun_5
       rect:
         serializedVersion: 2
-        x: 1439
-        y: 35
-        width: 968
-        height: 2193
+        x: 1401
+        y: 33
+        width: 1006
+        height: 2196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 54967f8f70e01a04d874c8ad4dc69d87
-      internalID: 917564083
+      spriteID: a0ef752f1d8ad3ef0800000000000000
+      internalID: -126759594829021686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubba Running SpriteSheet_10
+      name: WubbaFullRun_6
       rect:
         serializedVersion: 2
         x: 2732
-        y: 55
+        y: 53
         width: 863
-        height: 2190
+        height: 2191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cfa56d903f2ef104c8e7966fd65dea54
-      internalID: 1670954974
+      spriteID: 89e8920ee2940e110800000000000000
+      internalID: 1288109959106104984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubba Running SpriteSheet_11
+      name: WubbaFullRun_7
       rect:
         serializedVersion: 2
         x: 3999
-        y: 99
+        y: 98
         width: 903
-        height: 2134
+        height: 2136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7ea5c42993a617c4fba6d7d5b56bfd56
-      internalID: -1648202566
+      spriteID: 791128b041a30bbc0800000000000000
+      internalID: -3769449030342274665
       vertices: []
       indices: 
       edges: []
@@ -338,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 60b46e20965c8824194c3a1148aa7e88
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -347,19 +335,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Wubba Running SpriteSheet_0: -826171040
-      Wubba Running SpriteSheet_1: -296201588
-      Wubba Running SpriteSheet_10: 1670954974
-      Wubba Running SpriteSheet_11: -1648202566
-      Wubba Running SpriteSheet_2: 764110121
-      Wubba Running SpriteSheet_3: -200311071
-      Wubba Running SpriteSheet_4: -1964673620
-      Wubba Running SpriteSheet_5: -779416070
-      Wubba Running SpriteSheet_6: 640394954
-      Wubba Running SpriteSheet_7: 2143412235
-      Wubba Running SpriteSheet_8: 2093667428
-      Wubba Running SpriteSheet_9: 917564083
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
