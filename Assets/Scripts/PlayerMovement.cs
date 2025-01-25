@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private KeyCode primaryFire = KeyCode.Mouse0;
     [SerializeField] private KeyCode fireMode1 = KeyCode.Alpha1;
     [SerializeField] private KeyCode fireMode2 = KeyCode.Alpha2;
+    [SerializeField] private KeyCode reload = KeyCode.R;
 
     //Shooting Variables 
     [Header("Shooting")]
@@ -75,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
         //{
         //    Debug.Log("Pressed");
         //}
+
+        ReloadBullets();
     }
 
     //gets player input
@@ -110,6 +113,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(fireMode2))
         {
             fireState = 2;
+        }
+    }
+
+    void ReloadBullets()
+    {
+        if (Input.GetKeyDown(reload) && !isReloading && currentAmmo < magazineSize)
+        {
+            StartCoroutine(Reload());
         }
     }
 
