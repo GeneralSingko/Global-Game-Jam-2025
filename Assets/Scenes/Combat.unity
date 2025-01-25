@@ -167,7 +167,7 @@ MonoBehaviour:
   spawnRate: 1
   timeBetweenWaves: 3
   enemyCount: 5
-  enemy: {fileID: 8300182514849728339, guid: 6ee4ca171348a7e48988a0f001210899, type: 3}
+  enemy: {fileID: 3525461369845270294, guid: 145ead6408143dc4296f71ca5c13a465, type: 3}
 --- !u!1 &254179225
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &314781038
 MonoBehaviour:
   m_ObjectHideFlags: 0

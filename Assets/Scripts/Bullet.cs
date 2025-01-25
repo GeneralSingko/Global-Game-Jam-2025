@@ -27,15 +27,6 @@ public class Bullet : MonoBehaviour
         }
     }*/
 
-    public void ReturnToPool()
-    {
-        CancelInvoke(); // Stop any pending ReturnToPool calls
-        BulletPoolManager.Instance.ReturnBullet(gameObject);
-    }
-
-    
-}*/
-
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -64,7 +55,7 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    private void ReturnToPool()
+    public void ReturnToPool()
     {
         CancelInvoke(); // Stop any pending ReturnToPool calls
         BulletPoolManager.Instance.ReturnBullet(gameObject);

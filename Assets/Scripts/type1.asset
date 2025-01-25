@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc0ea5008e195a46a94bf91d5542dac, type: 3}
   m_Name: type1
   m_EditorClassIdentifier: 
-  healthPointMaximum: 5
-  healthPointCurrent: 5
-  attackDamage: 2
-  moveSpeed: 5
+  maximumHealth: 10
+  attackDamage: 5
+  moveSpeed: 2
