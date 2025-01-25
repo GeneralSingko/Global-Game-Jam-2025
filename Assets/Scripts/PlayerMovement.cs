@@ -47,6 +47,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletSpawnPos;
 
+    [Header("Shooting Mode Objects")]
+    [SerializeField] private GameObject singleFireObject; // Reference to the SingleFire GameObject
+    [SerializeField] private GameObject rapidFireObject;  // Reference to the RapidFire GameObject
+
+
     //Fire State "1" is single fire and fire state "2" is rapid fire
     private int fireState;
     private bool canShoot;
@@ -67,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //sets up variables
         fireState = 1; //sets fire state to single fire
+        UpdateFireModeObjects(); // Ensure the correct object is shown initially
         canShoot = true;
         currentAmmo = magazineSize; // Full magazine
         playerCurrentHP = playerMaximumHP; //Full HP
@@ -159,14 +165,26 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(fireMode1))
         {
             fireState = 1;
+            UpdateFireModeObjects();
         }
         if (Input.GetKeyDown(fireMode2))
         {
             fireState = 2;
+            UpdateFireModeObjects();
         }
         if (Input.GetKeyDown(dashKey) && canDash)
         {
             StartCoroutine(Dash());
+        }
+    }
+
+    private void UpdateFireModeObjects()
+    {
+        // Toggle visibility of SingleFire and RapidFire GameObjects
+        if (singleFireObject != null && rapidFireObject != null)
+        {
+            singleFireObject.SetActive(fireState == 1);
+            rapidFireObject.SetActive(fireState == 2);
         }
     }
     private void HandleMovementParticles()
