@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Transactions;
 using Unity.VisualScripting;
@@ -58,7 +59,8 @@ public class PlayerMovement : MonoBehaviour
     private int currentAmmo;                        // Bullets left in the magazine
     private bool isReloading = false;               // Check if the player is reloading
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Animator animator; // Reference to Animator
+
     void Start()
     {
         //sets up variables
@@ -67,6 +69,9 @@ public class PlayerMovement : MonoBehaviour
         currentAmmo = magazineSize; // Full magazine
         playerCurrentHP = playerMaximumHP; //Full HP
         playerRb = GetComponent<Rigidbody2D>();
+
+        // Initialize Animator
+        animator = GetComponent<Animator>();
 
         //sets up dashing abilities
         canDash = true;
@@ -97,7 +102,18 @@ public class PlayerMovement : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, lastMousePos, dashDistance * Time.deltaTime);
         }
         Debug.Log("Player Current HP: " + playerCurrentHP);
+
+        UpdateAnimations();
     }
+
+    private void UpdateAnimations()
+    {
+        // Check if the player is moving
+        bool isMoving = Mathf.Abs(xInput) > 0 || Mathf.Abs(yInput) > 0;
+        animator.SetBool("IsRunning", isMoving);
+    }
+
+
 
     //gets player input
     private void HandleInput()
@@ -247,13 +263,47 @@ public class PlayerMovement : MonoBehaviour
         canShoot = true;
     }
 
-    public void TakeDamage(int damageTaken)
+    /*public void TakeDamage(int damageTaken)
     {
         playerCurrentHP -= damageTaken;
-        if(playerCurrentHP <= 0)
+        // Trigger the Hurt animation
+        animator.SetTrigger("Hurt");
+        if (playerCurrentHP <= 0)
         {
             Destroy(gameObject);
         }
+    }*/
+
+    public void TakeDamage(int damageTaken)
+    {
+        playerCurrentHP -= damageTaken;
+
+        if (playerCurrentHP > 0)
+        {
+            // Trigger the Hurt animation
+            animator.SetTrigger("Hurt");
+        }
+        else
+        {
+            // Trigger the Dead animation and start destruction process
+            StartCoroutine(HandleDeath());
+        }
+    }
+
+    private IEnumerator HandleDeath()
+    {
+        // Disable input/movement
+        this.enabled = false;
+
+        // Trigger the Dead animation
+        animator.SetTrigger("Dead");
+
+        // Wait for the animation to finish
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForSeconds(stateInfo.length);
+
+        // Destroy the GameObject
+        Destroy(gameObject);
     }
 
     public int GetPlayerHealth()

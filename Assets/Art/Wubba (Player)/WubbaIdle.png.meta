@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 46d19fc7a55762948a1bb3e7bd5c9713
+guid: 791fd656eae86104ca14172239322c1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5820123267076822641
-    second: Wubba_Idle_0
+      213: 7304006516579294156
+    second: WubbaIdle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wubba_Idle_0
+      name: WubbaIdle_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 12
-        width: 354
-        height: 648
+        x: 105
+        y: 42
+        width: 1073
+        height: 2240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 176991b664b35c050800000000000000
-      internalID: 5820123267076822641
+      spriteID: ccbd8d18a3b0d5560800000000000000
+      internalID: 7304006516579294156
       vertices: []
       indices: 
       edges: []
