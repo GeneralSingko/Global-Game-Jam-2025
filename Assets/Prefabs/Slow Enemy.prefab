@@ -181,6 +181,7 @@ MonoBehaviour:
   currentHealth: 0
   stopDistance: 1.7
   isHitting: 0
+  hitEffect: {fileID: 0}
 --- !u!114 &3444811540660493362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,14 +194,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce52282ce6c3fc4489cdc3d73d45f82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 0
+  enemyType: 1
   hitTime: 1
   windUp: 0.1
   hitBox: {fileID: 2125029232373874349}
   fastDashDist: 0
   fastCD: 0
   hitPointMarkerDist: 0
-  amountHealed: 0
 --- !u!1 &2125029232373874349
 GameObject:
   m_ObjectHideFlags: 0
