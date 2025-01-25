@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Movement Particle System
     [Header("Movement Particle System")]
-    [SerializeField] private ParticleSystem movementParticles;
+    [SerializeField] private ParticleSystem bubbleTrailVFX;
 
     //Shooting Variables 
     [Header("Shooting")]
@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Turning Variables
     Vector2 mousePos;
+    private Transform pivot;
 
     [Header("Ammo System")]
     [SerializeField] private int magazineSize = 10;  // Total bullets in one magazine
@@ -70,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
         currentAmmo = magazineSize; // Full magazine
         playerCurrentHP = playerMaximumHP; //Full HP
         playerRb = GetComponent<Rigidbody2D>();
+        pivot = transform.Find("Pivot");
 
         // Initialize Animator
         animator = GetComponent<Animator>();
@@ -82,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!InGameSceneManager.Instance.gameIsPaused)
+        /*if (!InGameSceneManager.Instance.gameIsPaused)
         {
             //Movement Functions
             HandleInput();
@@ -105,14 +107,43 @@ public class PlayerMovement : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, lastMousePos, dashDistance * Time.deltaTime);
             }
             Debug.Log("Player Current HP: " + playerCurrentHP);
+        }*/
+
+        //Movement Functions
+        HandleInput();
+        if (!isDashing)
+        {
+            Move();
         }
+
+        HandleMovementParticles();
+
+        //Shooting Functions
+        Shoot();
+
+        //Mouse Direction rotation
+        LookAtMouse();
+
+        ReloadBullets();
+        if (isDashing)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, lastMousePos, dashDistance * Time.deltaTime);
+        }
+        Debug.Log("Player Current HP: " + playerCurrentHP);
+        // Update animation states
+        UpdateAnimations();
     }
 
     private void UpdateAnimations()
     {
         // Check if the player is moving
         bool isMoving = Mathf.Abs(xInput) > 0 || Mathf.Abs(yInput) > 0;
+
+        // Update Animator parameters
         animator.SetBool("IsRunning", isMoving);
+
+        // Reset Hurt trigger if it was set
+        animator.ResetTrigger("IsHurt");
     }
 
 
@@ -141,13 +172,15 @@ public class PlayerMovement : MonoBehaviour
     private void HandleMovementParticles()
     {
         // Check if the player is moving
-        if (moveSpeed > 0 && !movementParticles.isPlaying)
+        bool isMoving = Mathf.Abs(xInput) > 0 || Mathf.Abs(yInput) > 0;
+
+        if (isMoving && !bubbleTrailVFX.isPlaying)
         {
-            movementParticles.Play(); // Start the particle system
+            bubbleTrailVFX.Play(); // Start the particle system if the player is moving
         }
-        else if (moveSpeed    <= 0 && movementParticles.isPlaying)
+        else if (!isMoving && bubbleTrailVFX.isPlaying)
         {
-            movementParticles.Stop(); // Stop the particle system
+            bubbleTrailVFX.Stop(); // Stop the particle system if the player is idle
         }
     }
 
@@ -183,7 +216,7 @@ public class PlayerMovement : MonoBehaviour
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
-        transform.up = direction;
+        pivot.up = direction;
     }
 
     //Shoots projectiles based on fire state
