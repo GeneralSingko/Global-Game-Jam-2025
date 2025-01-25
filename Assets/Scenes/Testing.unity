@@ -428,11 +428,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9044374463177179282, guid: ebb7e01227393d04c891cee2ef44e529, type: 3}
   m_PrefabInstance: {fileID: 1702797360}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &248629313 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5252404850874642494, guid: ebb7e01227393d04c891cee2ef44e529, type: 3}
-  m_PrefabInstance: {fileID: 1702797360}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &254179225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,7 +2282,7 @@ MonoBehaviour:
   fireMode1: 49
   fireMode2: 50
   reload: 114
-  movementParticles: {fileID: 248629313}
+  bubbleTrailVFX: {fileID: 0}
   singleFireBulletCD: 0.5
   rapidFireBulletCD: 0.1
   bulletPrefab: {fileID: 6756351532905937528, guid: 266639fce57a6214988e3ed26d5fe03f, type: 3}

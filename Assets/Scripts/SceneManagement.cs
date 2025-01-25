@@ -7,14 +7,12 @@ public class SceneManagement : MonoBehaviour
     public static SceneManagement Instance;
 
     [Header("Load Scene Name Strings")]
-    [SerializeField] string mainMenuScene;
     [SerializeField] string startLoad;
+    [SerializeField] string mainMenuScene;
 
     [Header("Same menu buttons")]
     [SerializeField] GameObject mainMenuButtons;
     [SerializeField] GameObject settingsButtons;
-    [SerializeField] GameObject openPauseMenu;
-    [SerializeField] GameObject inGameOptions;
 
     [Header("Buttons Functions Caller")]
     [Header("Main Menu")]
