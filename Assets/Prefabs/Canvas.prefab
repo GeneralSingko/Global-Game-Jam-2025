@@ -1497,7 +1497,7 @@ GameObject:
   - component: {fileID: 5951085700710140649}
   - component: {fileID: 6492330101732591736}
   m_Layer: 5
-  m_Name: WaveText
+  m_Name: StatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

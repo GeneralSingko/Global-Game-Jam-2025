@@ -350,7 +350,7 @@ public class PlayerMovement : MonoBehaviour
         this.enabled = false;
 
         // Trigger the Dead animation
-        animator.SetTrigger("Dead");
+        animator.SetTrigger("IsDead");
 
         // Wait for the animation to finish
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
