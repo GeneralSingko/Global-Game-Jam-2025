@@ -1,4 +1,5 @@
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
@@ -14,6 +15,8 @@ public class EnemyBehavior : MonoBehaviour
 
     [Header("VFX Settings")]
     [SerializeField] ParticleSystem hitEffect; // Reference to the VFX prefab.
+    [SerializeField] Animator animator;
+    [SerializeField] AnimatorController[] animStates;
 
     private void Start()
     {
@@ -29,6 +32,8 @@ public class EnemyBehavior : MonoBehaviour
         {
             Debug.LogError("Player GameObject not found! Make sure it has the 'Player' tag.");
         }
+
+        animator = GetComponent<Animator>();
 
         //Setup
         isHitting = false;
@@ -52,6 +57,15 @@ public class EnemyBehavior : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if(currentHealth <= enemyStatValues.maximumHealth * 0.75)
+        {
+            animator.runtimeAnimatorController = animStates[1];
+        } 
+        if (currentHealth <= 1)
+        {
+            animator.runtimeAnimatorController = animStates[2];
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -61,7 +75,7 @@ public class EnemyBehavior : MonoBehaviour
             Bullet bulletScript;
 
             bulletScript = collision.gameObject.GetComponent<Bullet>();
-            TakeDamage(5);
+            TakeDamage(1);
             bulletScript.ReturnToPool();
 
             // Play the hit effect.

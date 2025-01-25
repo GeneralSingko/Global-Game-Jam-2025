@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc0ea5008e195a46a94bf91d5542dac, type: 3}
   m_Name: SlowEnemyStats
   m_EditorClassIdentifier: 
-  maximumHealth: 30
+  maximumHealth: 8
   attackDamage: 10
   moveSpeed: 1

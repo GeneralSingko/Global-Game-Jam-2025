@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc0ea5008e195a46a94bf91d5542dac, type: 3}
   m_Name: FastEnemy
   m_EditorClassIdentifier: 
-  maximumHealth: 5
+  maximumHealth: 3
   attackDamage: 2
   moveSpeed: 10

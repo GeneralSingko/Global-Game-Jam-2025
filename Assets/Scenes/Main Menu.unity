@@ -261,10 +261,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a0e4b7664b83a4fb7439e318bfd893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuScene: Main Menu
+  mainMenuScene: Testing
   startLoad: Gameplay
   mainMenuButtons: {fileID: 1504591511}
   settingsButtons: {fileID: 1046487847}
+  openPauseMenu: {fileID: 0}
+  inGameOptions: {fileID: 0}
   startButton: {fileID: 868389343}
   optionsButton: {fileID: 478259508}
   exitButton: {fileID: 387995487}
