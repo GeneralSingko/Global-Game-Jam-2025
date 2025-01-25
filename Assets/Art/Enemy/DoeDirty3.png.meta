@@ -810,7 +810,34 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DoeDirty3_0: 858531980191401914
+      DoeDirty3_1: -7382393727970569629
+      DoeDirty3_10: 2706248050367996625
+      DoeDirty3_11: 8745937192542724825
+      DoeDirty3_12: -7394614057015141869
+      DoeDirty3_13: 7428758144672823321
+      DoeDirty3_14: -333872014506806388
+      DoeDirty3_15: -5589635005772162156
+      DoeDirty3_16: -2970996116168865169
+      DoeDirty3_17: 5689852992351773658
+      DoeDirty3_18: -1785068846780760677
+      DoeDirty3_19: 5608030874561021912
+      DoeDirty3_2: 394996395119553723
+      DoeDirty3_20: -8112832851904777276
+      DoeDirty3_21: -44152443575495090
+      DoeDirty3_22: -4056692077014007297
+      DoeDirty3_23: -5984645276721127699
+      DoeDirty3_24: -5670500424650943084
+      DoeDirty3_25: -5824768027657230002
+      DoeDirty3_26: -6728820487830298938
+      DoeDirty3_3: 8135979409857078873
+      DoeDirty3_4: -8361559441893883615
+      DoeDirty3_5: 6107110666791367510
+      DoeDirty3_6: -8428952717157303658
+      DoeDirty3_7: 1351517192932674965
+      DoeDirty3_8: -5331697531061113611
+      DoeDirty3_9: -4204768733668743660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

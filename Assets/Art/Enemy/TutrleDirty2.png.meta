@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TutrleDirty2_0: -8611499996995990590
+      TutrleDirty2_1: -4382417421464686777
+      TutrleDirty2_2: 6771366903221448798
+      TutrleDirty2_3: 1108225875142192468
+      TutrleDirty2_4: 2289009022857837131
+      TutrleDirty2_5: -8692088672153001081
+      TutrleDirty2_6: -4933740644950207642
+      TutrleDirty2_7: -3327287247860286738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

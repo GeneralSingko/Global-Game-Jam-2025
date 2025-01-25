@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DoeDirty1_0: -9042021941181309361
+      DoeDirty1_1: -9214159862975999425
+      DoeDirty1_2: 2277730483598433549
+      DoeDirty1_3: -5276210742111711906
+      DoeDirty1_4: 6526066475003678335
+      DoeDirty1_5: -2932901555835593577
+      DoeDirty1_6: -8287509071437161378
+      DoeDirty1_7: -1345125882317756021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

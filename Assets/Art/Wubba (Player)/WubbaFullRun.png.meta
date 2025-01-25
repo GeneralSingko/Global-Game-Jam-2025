@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WubbaFullRun_0: 8468549982036119865
+      WubbaFullRun_1: 4217837885882983725
+      WubbaFullRun_2: -4107000966180609981
+      WubbaFullRun_3: -4579044006893735643
+      WubbaFullRun_4: -8718471366998230056
+      WubbaFullRun_5: -126759594829021686
+      WubbaFullRun_6: 1288109959106104984
+      WubbaFullRun_7: -3769449030342274665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
