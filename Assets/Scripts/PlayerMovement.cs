@@ -255,4 +255,9 @@ public class PlayerMovement : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public int GetPlayerHealth()
+    {
+        return playerCurrentHP;
+    }
 }
