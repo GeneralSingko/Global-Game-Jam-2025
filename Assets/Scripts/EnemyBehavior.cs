@@ -10,7 +10,10 @@ public class EnemyBehavior : MonoBehaviour
     [Header("Player Distance handler")]
     public float stopDistance = 1f; // Minimum distance to stop following
     private Transform player;     // Reference to the player's Transform
-    
+
+    [Header("VFX Settings")]
+    [SerializeField] ParticleSystem hitEffect; // Reference to the VFX prefab.
+
     private void Start()
     {
         // Find the player GameObject by its tag
@@ -48,19 +51,6 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("is Colliding");
-        Debug.Log(collision.gameObject.tag);
-        if (collision.gameObject.CompareTag("Bullet"))
-        {
-            Bullet bulletScript;
-
-            bulletScript = collision.gameObject.GetComponent<Bullet>();
-            TakeDamage(5);
-            bulletScript.ReturnToPool();
-        }
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
@@ -70,12 +60,28 @@ public class EnemyBehavior : MonoBehaviour
             bulletScript = collision.gameObject.GetComponent<Bullet>();
             TakeDamage(5);
             bulletScript.ReturnToPool();
+
+            // Play the hit effect.
+            PlayHitEffect(collision.GetContact(0).point);
         } else if (collision.gameObject.CompareTag("Player"))
         {
             PlayerMovement playerScript;
 
             playerScript = collision.gameObject.GetComponent<PlayerMovement>();
             playerScript.TakeDamage(enemyStatValues.attackDamage);
+        }
+    }
+
+    private void PlayHitEffect(Vector2 hitPosition)
+    {
+        if (hitEffect != null)
+        {
+            // Instantiate the particle system at the hit position.
+            ParticleSystem effect = Instantiate(hitEffect, hitPosition, Quaternion.identity);
+            effect.Play();
+
+            // Destroy the particle system after its duration.
+            Destroy(effect.gameObject, effect.main.duration);
         }
     }
 }

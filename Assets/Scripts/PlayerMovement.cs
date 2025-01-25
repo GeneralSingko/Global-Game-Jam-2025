@@ -83,6 +83,8 @@ public class PlayerMovement : MonoBehaviour
             Move();
         }
 
+        HandleMovementParticles();
+
         //Shooting Functions
         Shoot();
 
@@ -121,12 +123,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private void HandleMovementParticles()
     {
-        // Check if the player is moving
-        if (currentSpeed > 0 && !movementParticles.isPlaying)
+        // Check if the player is moving based on input
+        bool isMoving = Mathf.Abs(xInput) > 0 || Mathf.Abs(yInput) > 0;
+
+        if (isMoving && !movementParticles.isPlaying)
         {
             movementParticles.Play(); // Start the particle system
         }
-        else if (currentSpeed <= 0 && movementParticles.isPlaying)
+        else if (!isMoving && movementParticles.isPlaying)
         {
             movementParticles.Stop(); // Stop the particle system
         }
@@ -253,6 +257,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public int GetPlayerHealth()
+    {
+        return playerCurrentHP;
     }
 
 }
