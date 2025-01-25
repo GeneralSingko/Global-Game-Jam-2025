@@ -121,11 +121,11 @@ public class PlayerMovement : MonoBehaviour
     private void HandleMovementParticles()
     {
         // Check if the player is moving
-        if (currentSpeed > 0 && !movementParticles.isPlaying)
+        if (moveSpeed > 0 && !movementParticles.isPlaying)
         {
             movementParticles.Play(); // Start the particle system
         }
-        else if (currentSpeed <= 0 && movementParticles.isPlaying)
+        else if (moveSpeed    <= 0 && movementParticles.isPlaying)
         {
             movementParticles.Stop(); // Stop the particle system
         }

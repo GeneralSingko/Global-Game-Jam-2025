@@ -4,8 +4,8 @@ using UnityEngine;
 public class EnemyBehavior : MonoBehaviour
 {
     [Header("Scriptable Object")]
-    [SerializeField] EnemyStats enemyStatValues;       // Speed of the enemy
-    int currentHealth;
+    public EnemyStats enemyStatValues;       // Speed of the enemy
+    public int currentHealth;
 
     [Header("Player Distance handler")]
     public float stopDistance = 1f; // Minimum distance to stop following
@@ -38,11 +38,8 @@ public class EnemyBehavior : MonoBehaviour
         {
             Vector2 direction = (player.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, player.position, enemyStatValues.moveSpeed * Time.deltaTime);
-        } else
-        {
-
-        }
-        Debug.Log("current hp " + currentHealth); //replace later with ui
+        } 
+        Debug.Log("Enemy current HP: " + currentHealth); //replace later with ui
     }
 
     void TakeDamage(int damageTaken)
