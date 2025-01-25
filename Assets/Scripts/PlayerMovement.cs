@@ -90,7 +90,6 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, lastMousePos, dashDistance * Time.deltaTime);
         }
-
         Debug.Log("Player Current HP: " + playerCurrentHP);
     }
 
@@ -238,5 +237,4 @@ public class PlayerMovement : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }

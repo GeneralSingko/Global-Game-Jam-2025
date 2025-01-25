@@ -9,6 +9,7 @@ public class EnemyBehavior : MonoBehaviour
 
     [Header("Player Distance handler")]
     public float stopDistance = 1f; // Minimum distance to stop following
+    public bool isHitting; //sets enemy to hitting mode and stops it from moving
     private Transform player;     // Reference to the player's Transform
     
     private void Start()
@@ -26,15 +27,20 @@ public class EnemyBehavior : MonoBehaviour
             Debug.LogError("Player GameObject not found! Make sure it has the 'Player' tag.");
         }
 
+        //Setup
+        isHitting = false;
         currentHealth = enemyStatValues.maximumHealth;
     }
 
     private void Update()
     {
-        if (player != null && Vector2.Distance(transform.position, player.position) > stopDistance)
+        if (player != null && Vector2.Distance(transform.position, player.position) > stopDistance && !isHitting)
         {
             Vector2 direction = (player.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, player.position, enemyStatValues.moveSpeed * Time.deltaTime);
+        } else
+        {
+
         }
         Debug.Log("current hp " + currentHealth); //replace later with ui
     }
@@ -48,19 +54,6 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("is Colliding");
-        Debug.Log(collision.gameObject.tag);
-        if (collision.gameObject.CompareTag("Bullet"))
-        {
-            Bullet bulletScript;
-
-            bulletScript = collision.gameObject.GetComponent<Bullet>();
-            TakeDamage(5);
-            bulletScript.ReturnToPool();
-        }
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
