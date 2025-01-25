@@ -34,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private KeyCode fireMode2 = KeyCode.Alpha2;
     [SerializeField] private KeyCode reload = KeyCode.R;
 
+    // Movement Particle System
+    [Header("Movement Particle System")]
+    [SerializeField] private ParticleSystem movementParticles;
+
     //Shooting Variables 
     [Header("Shooting")]
     [SerializeField] private float singleFireBulletCD;
@@ -112,6 +116,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(dashKey) && canDash)
         {
             StartCoroutine(Dash());
+        }
+    }
+    private void HandleMovementParticles()
+    {
+        // Check if the player is moving
+        if (currentSpeed > 0 && !movementParticles.isPlaying)
+        {
+            movementParticles.Play(); // Start the particle system
+        }
+        else if (currentSpeed <= 0 && movementParticles.isPlaying)
+        {
+            movementParticles.Stop(); // Stop the particle system
         }
     }
 

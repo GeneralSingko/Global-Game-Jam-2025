@@ -90,6 +90,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3232699650222844755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525461369845270294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb08372bed4a6b49900f94e04e24bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyStatValues: {fileID: 11400000, guid: 1c6f521e794c50744b4ab3e8165c6c4a, type: 2}
+  hitEffect: {fileID: 7134288345005714223, guid: fb24a3e0f56b6f6428d50821a414318f, type: 3}
 --- !u!61 &4450058936114485840
 BoxCollider2D:
   m_ObjectHideFlags: 0
