@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statusText: {fileID: 0}
   player: {fileID: 0}
+  waveCount: 1
   spawnRate: 3
   timeBetweenWaves: 7
   enemyCount: 5
@@ -58,7 +59,6 @@ MonoBehaviour:
   - {fileID: 5700559293617221497}
   - {fileID: 5618698258697498221}
   - {fileID: 7858877199835642533}
-  - {fileID: 0}
   spawnedEnemies: []
 --- !u!1 &2902569597134934420
 GameObject:
