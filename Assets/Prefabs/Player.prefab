@@ -131,7 +131,9 @@ MonoBehaviour:
   dashDistance: 30
   dashDuration: 0.1
   dashCD: 0.5
-  playerMaximumHP: 120
+  playerMaximumHP: 60
+  hNumber: {fileID: 0}
+  aNumber: {fileID: 0}
   dashKey: 304
   primaryFire: 323
   fireMode1: 49

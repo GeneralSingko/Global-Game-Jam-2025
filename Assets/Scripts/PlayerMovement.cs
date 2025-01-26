@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Transactions;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float dashCD;
     [Header("Player Stats")]
     [SerializeField] int playerMaximumHP;
+    [SerializeField] TextMeshProUGUI hNumber;
+    [SerializeField] TextMeshProUGUI aNumber;
     private int playerCurrentHP;
 
     private bool isDashing;
@@ -114,6 +117,9 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Player Current HP: " + playerCurrentHP);
         // Update animation states
         UpdateAnimations();
+
+        hNumber.text = playerCurrentHP.ToString();
+        aNumber.text = currentAmmo.ToString();
     }
 
     private void UpdateAnimations()
