@@ -320,7 +320,7 @@ public class PlayerMovement : MonoBehaviour
         // Wait for the animation to finish
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         yield return new WaitForSeconds(stateInfo.length);
-
+        InGameSceneManager.Instance.GameOverScreen();
         // Destroy the GameObject
         Destroy(gameObject);
     }

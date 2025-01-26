@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HeartnAmmo_0: 2064026412044288629
+      HeartnAmmo_1: -4348067086656208952
+      HeartnAmmo_2: -4766856498522046916
+      HeartnAmmo_3: -3906652769535576805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
