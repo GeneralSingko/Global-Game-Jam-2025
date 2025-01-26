@@ -919,6 +919,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 679489843}
     - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
+      propertyPath: spawnRate
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
       propertyPath: statusText
       value: 
       objectReference: {fileID: 2061251103}
@@ -930,6 +934,10 @@ PrefabInstance:
       propertyPath: waveCountText
       value: 
       objectReference: {fileID: 2061251103}
+    - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
+      propertyPath: timeBetweenWaves
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
       propertyPath: enemyPrefabs.Array.size
       value: 2
