@@ -1158,16 +1158,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 540807494}
     - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
-      propertyPath: spawnRate
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
       propertyPath: statusText
       value: 
       objectReference: {fileID: 634929197}
+    - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
+      propertyPath: 'spawnPoints.Array.data[3]'
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 5717449484234724844, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
@@ -1371,6 +1370,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2248522469284599548, guid: 877d7bca43f205a43a67e976c9a80632, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2064026412044288629, guid: 9b149d5c38a0dc242bcc7968ae462509, type: 3}
+    - target: {fileID: 6020075729004017094, guid: 877d7bca43f205a43a67e976c9a80632, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4766856498522046916, guid: 9b149d5c38a0dc242bcc7968ae462509, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
