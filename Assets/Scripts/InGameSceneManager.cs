@@ -57,9 +57,12 @@ public class InGameSceneManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(pauseButton))
+        if (Input.GetKeyDown(pauseButton) && openPauseMenu.activeSelf == false)
         {
             LoadPauseMenu();
+        } else if((Input.GetKeyDown(pauseButton) && openPauseMenu.activeSelf == true))
+        {
+            UnloadPauseMenu();
         }
     }
     //In game UI
