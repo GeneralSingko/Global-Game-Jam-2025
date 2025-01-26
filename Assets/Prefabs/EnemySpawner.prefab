@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statusText: {fileID: 0}
   player: {fileID: 0}
-  spawnRate: 5
+  spawnRate: 3
   timeBetweenWaves: 7
   enemyCount: 5
   enemyPrefabs:
@@ -58,7 +58,7 @@ MonoBehaviour:
   - {fileID: 5700559293617221497}
   - {fileID: 5618698258697498221}
   - {fileID: 7858877199835642533}
-  - {fileID: 1642552544681025336}
+  - {fileID: 0}
   spawnedEnemies: []
 --- !u!1 &2902569597134934420
 GameObject:
@@ -92,7 +92,6 @@ Transform:
   - {fileID: 5700559293617221497}
   - {fileID: 5618698258697498221}
   - {fileID: 7858877199835642533}
-  - {fileID: 1642552544681025336}
   m_Father: {fileID: 804889823486655700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3485525879011590068
@@ -121,37 +120,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.05, y: 6.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8185349735607336828}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5717449484234724844
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1642552544681025336}
-  m_Layer: 0
-  m_Name: Points (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1642552544681025336
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5717449484234724844}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: -6.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
