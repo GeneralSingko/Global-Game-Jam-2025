@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyStatValues: {fileID: 11400000, guid: 8e10ba48337f6c14da86aea9c6db8519, type: 2}
   currentHealth: 0
-  stopDistance: 5
+  stopDistance: 2
   isHitting: 0
   hitEffect: {fileID: 7134288345005714223, guid: fb24a3e0f56b6f6428d50821a414318f, type: 3}
   animator: {fileID: 0}
