@@ -90,30 +90,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (!InGameSceneManager.Instance.gameIsPaused)
-        {
-            //Movement Functions
-            HandleInput();
-            if (!isDashing)
-            {
-                Move();
-            }
-
-            HandleMovementParticles();
-
-            //Shooting Functions
-            Shoot();
-
-            //Mouse Direction rotation
-            LookAtMouse();
-
-            ReloadBullets();
-            if (isDashing)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, lastMousePos, dashDistance * Time.deltaTime);
-            }
-            Debug.Log("Player Current HP: " + playerCurrentHP);
-        }*/
 
         //Movement Functions
         HandleInput();
