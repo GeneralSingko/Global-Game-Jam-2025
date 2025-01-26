@@ -1311,6 +1311,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 773379160}
     - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
+      propertyPath: winMenu
+      value: 
+      objectReference: {fileID: 1638660338}
+    - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
       propertyPath: settings
       value: 
       objectReference: {fileID: 857933731}
@@ -1319,6 +1323,10 @@ PrefabInstance:
       value: WubbaForrest
       objectReference: {fileID: 0}
     - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 1638660339}
+    - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
       propertyPath: backToMenu
       value: 
       objectReference: {fileID: 1512300610}
@@ -1326,6 +1334,14 @@ PrefabInstance:
       propertyPath: enemySpawner
       value: 
       objectReference: {fileID: 1226534735}
+    - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
+      propertyPath: winWaveCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
+      propertyPath: amountOfWaves
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
       propertyPath: gameOverScene
       value: 
@@ -1498,11 +1514,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5256174416163769738, guid: 877d7bca43f205a43a67e976c9a80632, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 877d7bca43f205a43a67e976c9a80632, type: 3}
+--- !u!114 &1638660338 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2089938160978731689, guid: 877d7bca43f205a43a67e976c9a80632, type: 3}
+  m_PrefabInstance: {fileID: 1638660337}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1638660339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5256174416163769738, guid: 877d7bca43f205a43a67e976c9a80632, type: 3}
+  m_PrefabInstance: {fileID: 1638660337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1669171233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,8 +1973,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1168940709}
   - {fileID: 866008579}
-  - {fileID: 1287316730}
-  - {fileID: 1452947177}
-  - {fileID: 1638660337}
-  - {fileID: 1400898480}
   - {fileID: 567973165}
+  - {fileID: 1452947177}
+  - {fileID: 1400898480}
+  - {fileID: 1638660337}
+  - {fileID: 1287316730}
