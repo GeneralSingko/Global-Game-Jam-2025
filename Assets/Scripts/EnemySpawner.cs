@@ -109,9 +109,6 @@ public class EnemySpawner : MonoBehaviour
             statusText.text = "Game Over!";
             statusText.color = Color.red; // Optionally, change the color for Game Over
         }
-
-        InGameSceneManager.Instance.GameOverScreen();
-
         Debug.Log("Game Over!");
     }
 }

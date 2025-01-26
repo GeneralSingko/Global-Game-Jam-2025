@@ -111,6 +111,7 @@ public class InGameSceneManager : MonoBehaviour
 
     void BackToMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(mainMenuScene);
     }
 
@@ -123,10 +124,10 @@ public class InGameSceneManager : MonoBehaviour
 
     void retryLevel()
     {
-        Time.timeScale = 1;
         gameIsPaused = false;
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
+        Time.timeScale = 1;
     }
 
     //Scene transition 
