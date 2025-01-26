@@ -943,6 +943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerWalls
       objectReference: {fileID: 0}
+    - target: {fileID: 3407305022189106676, guid: 0203d4b5e0f47474496fb71d21a30655, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7285510283435682571, guid: 0203d4b5e0f47474496fb71d21a30655, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
