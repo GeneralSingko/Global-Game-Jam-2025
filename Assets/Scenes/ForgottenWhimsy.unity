@@ -1068,6 +1068,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1226534735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
+  m_PrefabInstance: {fileID: 1400898480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d68eed0ca2fd34b9f563aa86f65852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1287316729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1209,10 @@ PrefabInstance:
       propertyPath: backToMenu
       value: 
       objectReference: {fileID: 1512300610}
+    - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
+      propertyPath: enemySpawner
+      value: 
+      objectReference: {fileID: 1226534735}
     - target: {fileID: 2572447117637983745, guid: f987fdd0eb62cc045bfacfb69bbd31e1, type: 3}
       propertyPath: gameOverScene
       value: 
@@ -1370,14 +1385,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2248522469284599548, guid: 877d7bca43f205a43a67e976c9a80632, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2064026412044288629, guid: 9b149d5c38a0dc242bcc7968ae462509, type: 3}
-    - target: {fileID: 6020075729004017094, guid: 877d7bca43f205a43a67e976c9a80632, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -4766856498522046916, guid: 9b149d5c38a0dc242bcc7968ae462509, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
