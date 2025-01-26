@@ -5,15 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Testing.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 6d5df1118f874d24e8da4dd874da1a99
   - enabled: 1
     path: Assets/Scenes/WubbaForrest.unity
     guid: b3c4ce1e52f5b9046a33fb3bb1378443
+  - enabled: 1
+    path: Assets/Scenes/ForgottenWhimsy.unity
+    guid: ac4fc95922948b4408be738100fe8b95
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
