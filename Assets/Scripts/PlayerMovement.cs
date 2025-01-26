@@ -71,6 +71,10 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator animator; // Reference to Animator
 
+    [Header("Movement Audio")]
+    [SerializeField] private AudioSource movementAudio;
+
+
     void Start()
     {
         //sets up variables
@@ -174,6 +178,7 @@ public class PlayerMovement : MonoBehaviour
         // Check if the player is moving
         bool isMoving = Mathf.Abs(xInput) > 0 || Mathf.Abs(yInput) > 0;
 
+        // Handle VFX
         if (isMoving && !bubbleTrailVFX.isPlaying)
         {
             bubbleTrailVFX.Play(); // Start the particle system if the player is moving
@@ -181,6 +186,16 @@ public class PlayerMovement : MonoBehaviour
         else if (!isMoving && bubbleTrailVFX.isPlaying)
         {
             bubbleTrailVFX.Stop(); // Stop the particle system if the player is idle
+        }
+
+        // Handle Audio
+        if (isMoving && !movementAudio.isPlaying)
+        {
+            movementAudio.Play(); // Play movement sound if the player is moving
+        }
+        else if (!isMoving && movementAudio.isPlaying)
+        {
+            movementAudio.Stop(); // Stop movement sound if the player is idle
         }
     }
 
