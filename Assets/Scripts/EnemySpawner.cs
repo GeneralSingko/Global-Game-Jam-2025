@@ -23,10 +23,10 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        // Update the wave count text
+        // Update the wave count text to display just the number
         if (player != null && player.GetPlayerHealth() > 0)
         {
-            statusText.text = "Wave: " + waveCount.ToString();
+            statusText.text = waveCount.ToString(); // Only show the wave number
         }
 
         // Stop spawning if the player is dead
