@@ -9,11 +9,13 @@ public class InGameSceneManager : MonoBehaviour
     [Header("Load Scene Name Strings")]
     [SerializeField] string mainMenuScene;
     [SerializeField] string startLoad;
+    [SerializeField] string afterThisLevel;
 
     [Header("Same menu buttons")]
     [SerializeField] GameObject openPauseMenu;
     [SerializeField] GameObject inGameOptions;
     [SerializeField] GameObject gameOverScene;
+    [SerializeField] GameObject winScreen;
 
     [Header("Buttons Functions Caller")]
     [Header("Game Scene")]
@@ -23,9 +25,15 @@ public class InGameSceneManager : MonoBehaviour
     [SerializeField] Button backToMainMenu;
     [SerializeField] Button backToMainMenuLose;
     [SerializeField] Button retry;
+    [SerializeField] Button winMenu;
 
     [Header("UI Buttons")]
     [SerializeField] KeyCode pauseButton = KeyCode.Escape;
+
+    [Header("Wave Amount handler")]
+    [SerializeField] EnemySpawner enemySpawner;
+    [SerializeField] int amountOfWaves;
+    [SerializeField] int winWaveCount;
 
     public bool gameIsPaused;
 
@@ -63,6 +71,15 @@ public class InGameSceneManager : MonoBehaviour
         } else if((Input.GetKeyDown(pauseButton) && openPauseMenu.activeSelf == true))
         {
             UnloadPauseMenu();
+        }
+
+        if (enemySpawner.waveCount >= amountOfWaves)
+        {
+            AfterLevel();
+        }
+        if (enemySpawner.waveCount >= winWaveCount)
+        {
+            WinGame();
         }
     }
     //In game UI
@@ -109,5 +126,18 @@ public class InGameSceneManager : MonoBehaviour
         gameIsPaused = false;
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
+    }
+
+    //Scene transition 
+    void AfterLevel()
+    {
+        SceneManager.LoadScene(afterThisLevel);
+    }
+    void WinGame()
+    {
+        Time.timeScale = 0;
+        winScreen.SetActive(true);
+        openPauseMenu.SetActive(false);
+        inGameOptions.SetActive(false);
     }
 }

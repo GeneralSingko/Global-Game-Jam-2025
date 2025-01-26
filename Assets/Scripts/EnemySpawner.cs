@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     public TextMeshProUGUI statusText; // Unified TextMeshProUGUI for wave count and Game Over message
     public PlayerMovement player; // Reference to the PlayerMovement script
 
-    int waveCount = 1;
+    public int waveCount = 1;
     public float spawnRate = 1.0f;
     public float timeBetweenWaves = 3.0f;
     public int enemyCount;
