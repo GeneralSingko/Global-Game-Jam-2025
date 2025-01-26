@@ -292,17 +292,6 @@ public class PlayerMovement : MonoBehaviour
         canShoot = true;
     }
 
-    /*public void TakeDamage(int damageTaken)
-    {
-        playerCurrentHP -= damageTaken;
-        // Trigger the Hurt animation
-        animator.SetTrigger("Hurt");
-        if (playerCurrentHP <= 0)
-        {
-            InGameSceneManager.Instance.GameOverScreen();
-            Destroy(gameObject);
-        }
-    }*/
 
     public void TakeDamage(int damageTaken)
     {
