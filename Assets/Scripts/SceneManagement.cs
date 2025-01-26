@@ -48,7 +48,6 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene(startLoad);
         Time.timeScale = 1;
-        InGameSceneManager.Instance.gameIsPaused = false;
     }
 
     void LoadOptions()
