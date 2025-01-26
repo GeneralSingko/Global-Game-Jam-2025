@@ -61,6 +61,7 @@ public class InGameSceneManager : MonoBehaviour
         backToMainMenu.onClick.AddListener(BackToMainMenu);
         retry.onClick.AddListener(retryLevel);
         backToMainMenuLose.onClick.AddListener(BackToMainMenu);
+        winMenu.onClick.AddListener(BackToMainMenu);
     }
 
     private void Update()
