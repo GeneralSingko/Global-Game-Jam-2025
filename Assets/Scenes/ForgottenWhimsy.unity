@@ -1161,22 +1161,6 @@ PrefabInstance:
       propertyPath: statusText
       value: 
       objectReference: {fileID: 634929197}
-    - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
-      propertyPath: enemyPrefabs.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
-      propertyPath: 'enemyPrefabs.Array.data[0]'
-      value: 
-      objectReference: {fileID: 6533624758748859786, guid: ff79589b222f9e047b869da19bfd77c3, type: 3}
-    - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
-      propertyPath: 'enemyPrefabs.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1305330635804471901, guid: 791d831eee1db794ea04ca03b8cb31a7, type: 3}
-    - target: {fileID: 6119810870556271745, guid: 8626cf2a6eaefe64dad0120c7adb6c32, type: 3}
-      propertyPath: 'enemyPrefabs.Array.data[2]'
-      value: 
-      objectReference: {fileID: 243800564788020162, guid: ce3525c35f0bdaf418c1d4e3893ec3fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

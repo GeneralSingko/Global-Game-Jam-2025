@@ -1,91 +1,7 @@
-/*using System.Collections;
-using UnityEngine;
-using TMPro;
-using System.Collections.Generic;
-
-public class EnemySpawner : MonoBehaviour
-{
-    public TextMeshProUGUI waveCountText;
-    public TextMeshProUGUI gameOverText; // Reference to a Game Over text or UI element
-    public PlayerMovement player; // Reference to the PlayerMovement script
-
-    int waveCount = 1;
-    public float spawnRate = 1.0f;
-    public float timeBetweenWaves = 3.0f;
-    public int enemyCount;
-    public GameObject enemy;
-    public List<GameObject> spawnedEnemies = new List<GameObject>(); // List to track spawned enemies
-
-    bool waveIsDone = true;
-
-    void Update()
-    {
-        waveCountText.text = "Wave: " + waveCount.ToString();
-
-        // Stop spawning if the player is dead
-        if (player == null || player.GetPlayerHealth() <= 0)
-        {
-            GameOver();
-            return;
-        }
-
-        if (waveIsDone == true)
-        {
-            StartCoroutine(waveSpawner());
-        }
-
-    }
-
-    IEnumerator waveSpawner()
-    {
-        waveIsDone = false;
-
-        for (int i = 0; i < enemyCount; i++)
-        {
-            GameObject enemyClone = Instantiate(enemy);
-
-            yield return new WaitForSeconds(spawnRate);
-        }
-
-        spawnRate -= 0.1f;
-        enemyCount += 3;
-        waveCount += 1;
-
-        yield return new WaitForSeconds(timeBetweenWaves);
-
-        waveIsDone = true;
-    }
-
-    void GameOver()
-    {
-        // Stop spawning
-        waveIsDone = false;
-
-        // Destroy all spawned enemies
-        foreach (GameObject enemy in spawnedEnemies)
-        {
-            if (enemy != null)
-            {
-                Destroy(enemy);
-            }
-        }
-        spawnedEnemies.Clear();
-
-        // Display Game Over message
-        if (gameOverText != null)
-        {
-            gameOverText.text = "Game Over!";
-            gameOverText.gameObject.SetActive(true); // Show the Game Over UI element
-        }
-
-        Debug.Log("Game Over!");
-    }
-}*/
-
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -97,6 +13,7 @@ public class EnemySpawner : MonoBehaviour
     public float timeBetweenWaves = 3.0f;
     public int enemyCount;
     public GameObject[] enemyPrefabs; // Array to hold the three enemy prefabs
+    public Transform[] spawnPoints; // Array of spawn points in the scene
     public List<GameObject> spawnedEnemies = new List<GameObject>(); // List to track spawned enemies
 
     bool waveIsDone = true;
@@ -137,7 +54,11 @@ public class EnemySpawner : MonoBehaviour
             // Randomly decide which of the two selected types to spawn
             GameObject selectedEnemy = Random.Range(0, 2) == 0 ? enemyType1 : enemyType2;
 
-            GameObject enemyClone = Instantiate(selectedEnemy);
+            // Randomly select a spawn point from the array
+            Transform selectedSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+            // Spawn the enemy at the selected spawn point
+            GameObject enemyClone = Instantiate(selectedEnemy, selectedSpawnPoint.position, Quaternion.identity);
             spawnedEnemies.Add(enemyClone); // Add spawned enemy to the list
 
             yield return new WaitForSeconds(spawnRate);
