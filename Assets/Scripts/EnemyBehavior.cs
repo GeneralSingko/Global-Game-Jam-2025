@@ -1,5 +1,4 @@
 using Unity.VisualScripting;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
@@ -16,7 +15,7 @@ public class EnemyBehavior : MonoBehaviour
     [Header("VFX Settings")]
     [SerializeField] ParticleSystem hitEffect; // Reference to the VFX prefab.
     [SerializeField] Animator animator;
-    [SerializeField] AnimatorController[] animStates;
+    [SerializeField] RuntimeAnimatorController[] animStates;
 
     private void Start()
     {

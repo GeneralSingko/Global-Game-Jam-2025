@@ -943,10 +943,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerWalls
       objectReference: {fileID: 0}
-    - target: {fileID: 3407305022189106676, guid: 0203d4b5e0f47474496fb71d21a30655, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7285510283435682571, guid: 0203d4b5e0f47474496fb71d21a30655, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1581,14 +1577,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2146172591994389201, guid: 0df3eb0f5109ccf459adfb1a08ce140b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2609915871355461214, guid: 0df3eb0f5109ccf459adfb1a08ce140b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3897981578462783524, guid: 0df3eb0f5109ccf459adfb1a08ce140b, type: 3}
-      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
